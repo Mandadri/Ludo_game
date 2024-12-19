@@ -1,0 +1,30 @@
+.piece {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    position: absolute;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.piece[data-color="red"] {
+    background-color: var(--red-color);
+}
+
+.piece[data-color="green"] {
+    background-color: var(--green-color);
+}
+
+.piece[data-color="yellow"] {
+    background-color: var(--yellow-color);
+}
+
+.piece[data-color="blue"] {
+    background-color: var(--blue-color);
+}
+
+.piece.selected {
+    transform: scale(1.2);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
